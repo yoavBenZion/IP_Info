@@ -1,0 +1,15 @@
+<% include ./partials/header%>
+    <div class="ui main text container segment" style="margin-top: 4em">
+        <div class="ui huge header">Results page</div>
+        <form action="/results" method="get">
+            <input type="text" placeholder="ip address" name="ip">
+            <input type="submit" value="submit">
+        </form>
+        <%if(!data) {%>
+            <h3 style="color: lightcoral">
+                Your IP is invalid, Please use a valid IP address
+            </h3>
+            <%}%>
+    </div>
+
+    <% include ./partials/footer%>

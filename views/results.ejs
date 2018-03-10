@@ -1,0 +1,54 @@
+<% include ./partials/header%>
+    <div class="ui main text container segment" style="margin-top: 4em">
+        <div class="ui huge header">Results page</div>
+        <h3>Location</h3>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Region</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <%=data.country%>
+                    </td>
+                    <td>
+                        <%=data.region %>
+                    </td>
+                    <td>
+                        <%=data.city %>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Coordinates</h3>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <%=location[0]%>
+                    </td>
+                    <td>
+                        <%=location[1]%>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Organizations</h3>
+        <p>
+            <%=data.org%>
+        </p>
+    </div>
+
+    <a href="/">Go Back</a>
+    </div>
+    <% include ./partials/footer%>
